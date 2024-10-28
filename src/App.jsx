@@ -1,3 +1,5 @@
+// App.js
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -6,7 +8,8 @@ import Classes from './components/Classes';
 import Trainers from './components/Trainers';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
-import Footer from './components/Footer';  // Import the Footer component
+import Footer from './components/Footer';
+import FitnessCurve from './components/FitnessCurve';  // Import the FitnessCurve component
 
 function App() {
   return (
@@ -21,9 +24,11 @@ function App() {
             <Route path="/trainers" element={<Trainers />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
+
           </Routes>
         </main>
-        <Footer />  {/* Add the Footer here */}
+        <FitnessCurve />
+        <Footer />
       </div>
     </Router>
   );
